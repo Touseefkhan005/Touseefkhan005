@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOUSEEF KHAN · modern profile README</title>
+    <!-- Font & icons (clean, sharp) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0b0d10;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 2rem 1rem;
+            line-height: 1.5;
+            color: #e3e9f0;
+        }
+
+        .readme-card {
+            max-width: 1100px;
+            width: 100%;
+            background: #0f1117;
+            border-radius: 2.5rem;
+            padding: 2.5rem 2.8rem;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(56, 189, 248, 0.15) inset;
+            backdrop-filter: blur(2px);
+            border: 1px solid #20242c;
+        }
+
+        /* Gradient text master */
+        .gradient-text {
+            background: linear-gradient(115deg, #58a6ff, #b975ff, #ff7b9c);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .subhead {
+            font-size: 1.5rem;
+            font-weight: 500;
+            background: linear-gradient(135deg, #a5b9e0, #c7b3ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 2rem;
+            border-bottom: 1.5px dashed #2c313c;
+            padding-bottom: 1rem;
+        }
+
+        .wave-line {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #3b4455;
+            font-size: 1.2rem;
+            margin: 1.8rem 0;
+        }
+
+        .wave-line i {
+            font-size: 1.8rem;
+            color: #4b8cbf;
+            opacity: 0.7;
+        }
+
+        .wave-line hr {
+            flex: 1;
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #3c506e, #a477d4, #3c506e, transparent);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.9fr;
+            gap: 2rem;
+            margin: 2rem 0 2.5rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #d3ddec;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .about-text i {
+            width: 28px;
+            color: #6e9eff;
+            font-size: 1.3rem;
+        }
+
+        .contact-mini {
+            background: #181c25;
+            border-radius: 2rem;
+            padding: 1.6rem 2rem;
+            border: 1px solid #2d3440;
+        }
+
+        .contact-mini h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #9aa9c1;
+            margin-bottom: 1.4rem;
+        }
+
+        .badge-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .badge {
+            background: #252c38;
+            padding: 0.6rem 1.4rem;
+            border-radius: 40px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #dee9fc;
+            border: 1px solid #3a4355;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge i {
+            color: #70a5ff;
+        }
+
+        .badge:hover {
+            border-color: #6095fd;
+            background: #1e2a3a;
+            transform: translateY(-2px);
+        }
+
+        /* tech stack —— modern badge table */
+        .tech-section {
+            margin: 3rem 0;
+        }
+
+        .tech-category {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem 1.8rem;
+            margin-top: 1.2rem;
+            margin-bottom: 2.2rem;
+        }
+
+        .tech-chip {
+            background: #171c26;
+            border-radius: 100px;
+            padding: 0.5rem 1.2rem 0.5rem 0.8rem;
+            border: 1px solid #2e384a;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #c9dbfb;
+            box-shadow: 0 4px 12px rgba(0, 15, 30, 0.5);
+        }
+
+        .tech-chip i {
+            font-size: 1.3rem;
+        }
+
+        .fa-python { color: #4584b6; }
+        .fa-js { color: #f7df1e; }
+        .fa-java { color: #f89820; }
+        .fa-react { color: #61dafb; }
+        .fa-node { color: #83cd29; }
+        .fa-database { color: #4db33d; }
+        .fa-aws { color: #ff9900; }
+        .fa-docker { color: #0db7ed; }
+        .fa-git-alt { color: #f1502f; }
+        .fa-google { color: #4285f4; } /* GCP / AI */
+        .micro-icon { filter: drop-shadow(0 2px 4px #00000066); }
+
+        /* featured projects — minimal but bold */
+        .projects-panel {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0 2.8rem;
+        }
+
+        .project-item {
+            background: #131823;
+            flex: 1 1 200px;
+            border-radius: 2rem;
+            padding: 1.8rem 1.5rem;
+            border: 1px solid #2e384e;
+            transition: all 0.25s;
+            box-shadow: 0 15px 25px -20px #000000;
+        }
+
+        .project-item:hover {
+            border-color: #6d8fd1;
+            background: #18212e;
+            transform: scale(1.02);
+        }
+
+        .project-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-item h4 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(to right, #d6e3ff, #b7b1ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .project-item p {
+            color: #a0b2cf;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        .project-tag {
+            display: inline-block;
+            background: #294174;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: white;
+            margin-top: 1rem;
+            border: 1px solid #5b7bc9;
+        }
+
+        /* github stats row */
+        .stats-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 3rem 0 2rem;
+        }
+
+        .stat-box {
+            background: #11161f;
+            border-radius: 2rem;
+            border: 1px solid #2a3442;
+            padding: 1rem 1.8rem;
+            flex: 1 1 250px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 15px 25px -20px #000000;
+        }
+
+        .stat-box i {
+            font-size: 2.2rem;
+            color: #6699ff;
+        }
+
+        .stat-box span {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .stat-box p {
+            color: #8e9fc3;
+        }
+
+        .lang-graph {
+            background: #11161f;
+            border-radius: 2rem;
+            padding: 1.4rem 2rem;
+            border: 1px solid #2a3442;
+        }
+
+        .lang-bar {
+            display: flex;
+            height: 10px;
+            border-radius: 20px;
+            background: #262f3f;
+            margin: 1rem 0 0.5rem;
+            overflow: hidden;
+        }
+
+        .lang-fill {
+            height: 10px;
+            background: linear-gradient(90deg, #5773ff, #bd6ef0);
+            width: 70%; /* approximate */
+            border-radius: 20px;
+        }
+
+        .connect-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 3rem 0 1.2rem;
+        }
+
+        .social-btn {
+            background: #191f2b;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #cbd5e8;
+            border: 1px solid #363f53;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.15s;
+            text-decoration: none;
+        }
+
+        .social-btn:hover {
+            background: #232d3f;
+            border-color: #628ef8;
+            color: white;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 3rem;
+            border-top: 1px solid #252e3b;
+            padding-top: 2rem;
+            color: #7c8bb0;
+            font-size: 0.95rem;
+        }
+
+        .glowing-dot {
+            width: 10px;
+            height: 10px;
+            background: #1effb0;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px #19f7a5;
+            margin-right: 6px;
+        }
+
+        .badge-new {
+            background: #00223b;
+            border: 1px solid #306bb3;
+        }
+    </style>
+</head>
+<body>
+    <div class="readme-card">
+        <!-- main title -->
+        <h1>
+            <span class="gradient-text">TOUSEEF KHAN</span>
+            <span style="font-weight: 400; color: #5f738e; margin-left: 10px;">✦ full-stack & AI</span>
+        </h1>
+        <div class="subhead">
+            <i class="fas fa-bolt" style="color: #c58aff; margin-right: 12px;"></i> architect • founder @xvision • automation alchemist
+        </div>
+
+        <!-- wave divider (clean) -->
+        <div class="wave-line">
+            <i class="fas fa-minus"></i>
+            <hr>
+            <i class="fas fa-wave-square"></i>
+            <hr>
+            <i class="fas fa-plus"></i>
+        </div>
+
+        <!-- About + contact hybrid -->
+        <div class="about-grid">
+            <div class="about-text">
+                <p><i class="fas fa-compass"></i> Founder & CEO <strong class="gradient-text">@Xvision</strong> – building AI-native software</p>
+                <p><i class="fas fa-code-branch"></i> currently deep in <span class="badge-new badge" style="font-size: 0.9rem;">Cloud Architecture</span> <span class="badge-new badge">RAG + GPT</span></p>
+                <p><i class="fas fa-hand-peace"></i> collaborate on <span style="color:#b38dff;">open source AI / dev tools</span></p>
+                <p><i class="fas fa-message"></i> ask me about Python, React, AI agents, or automation</p>
+                <p><i class="fas fa-paper-plane"></i> aalikhan22554@gmail.com</p>
+                <p><i class="fas fa-crown"></i> fun fact: i build tools that build tools</p>
+            </div>
+            <div class="contact-mini">
+                <h3><i class="far fa-eye" style="margin-right: 8px;"></i> quick connect</h3>
+                <div class="badge-cloud">
+                    <span class="badge"><i class="fab fa-linkedin-in"></i> linkedin</span>
+                    <span class="badge"><i class="fab fa-x-twitter"></i> X / twitter</span>
+                    <span class="badge"><i class="fab fa-dev"></i> dev.to</span>
+                    <span class="badge"><i class="fab fa-medium"></i> medium</span>
+                    <span class="badge"><i class="far fa-envelope"></i> email</span>
+                    <span class="badge"><i class="fas fa-globe"></i> xvision.tech</span>
+                </div>
+                <div style="margin-top: 20px; background: #1c2331; border-radius: 30px; padding: 0.8rem 1.5rem;">
+                    <span class="glowing-dot"></span> <span style="color:#acccff;">#OpenToCollaborate · AI & full-stack</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- wave divider -->
+        <div class="wave-line">
+            <i class="fas fa-minus"></i><hr><i class="fas fa-sliders-h"></i><hr><i class="fas fa-plus"></i>
+        </div>
+
+        <!-- TECH STACK (super clean, expert badges) -->
+        <div class="tech-section">
+            <h2 style="font-weight: 600; font-size: 2rem; letter-spacing: -1px; margin-bottom: 1.8rem;">
+                <span class="gradient-text">⛭ toolchain</span> <span style="color: #4f6382; font-size: 1.4rem;">// everything I wield</span>
+            </h2>
+            <div class="tech-category">
+                <span class="tech-chip"><i class="fab fa-python"></i> Python</span>
+                <span class="tech-chip"><i class="fab fa-js"></i> JavaScript/TS</span>
+                <span class="tech-chip"><i class="fab fa-java"></i> Java</span>
+                <span class="tech-chip"><i class="fas fa-code"></i> C++</span>
+                <span class="tech-chip"><i class="fab fa-react"></i> React & Next</span>
+                <span class="tech-chip"><i class="fab fa-vuejs"></i> Vue</span>
+                <span class="tech-chip"><i class="fab fa-node"></i> Node.js</span>
+                <span class="tech-chip"><i class="fas fa-database"></i> MongoDB</span>
+                <span class="tech-chip"><i class="fas fa-database"></i> PostgreSQL</span>
+                <span class="tech-chip"><i class="fas fa-cloud"></i> AWS</span>
+                <span class="tech-chip"><i class="fab fa-docker"></i> Docker</span>
+                <span class="tech-chip"><i class="fas fa-robot"></i> LangChain</span>
+                <span class="tech-chip"><i class="fas fa-brain"></i> OpenAI</span>
+                <span class="tech-chip"><i class="fas fa-microchip"></i> HuggingFace</span>
+                <span class="tech-chip"><i class="fab fa-git-alt"></i> Git</span>
+                <span class="tech-chip"><i class="fas fa-code"></i> Tailwind</span>
+            </div>
+        </div>
+
+        <!-- FEATURED PROJECTS — with design flair -->
+        <h2 style="font-weight: 600; font-size: 2rem; margin: 2rem 0 1.2rem;">
+            <span class="gradient-text">✦ featured builds</span>
+        </h2>
+        <div class="projects-panel">
+            <div class="project-item">
+                <div class="project-icon"><i class="fas fa-eye"></i><i class="fas fa-sparkles" style="margin-left: -5px; color: #b673ff;"></i></div>
+                <h4>Xvision AI</h4>
+                <p>Agentic automation & multimodal analytics platform.</p>
+                <span class="project-tag">live · 2025</span>
+            </div>
+            <div class="project-item">
+                <div class="project-icon"><i class="fas fa-rotate"></i></div>
+                <h4>RAG portfolio</h4>
+                <p>GPT + personal knowledge base — interactive Q&A.</p>
+                <span class="project-tag">demo</span>
+            </div>
+            <div class="project-item">
+                <div class="project-icon"><i class="fas fa-gears"></i></div>
+                <h4>AutoPipe</h4>
+                <p>Low-code automation for devops & data pipelines.</p>
+                <span class="project-tag">open source</span>
+            </div>
+        </div>
+
+        <!-- stats with designer touch -->
+        <div class="stats-row">
+            <div class="stat-box">
+                <i class="fas fa-code-branch"></i>
+                <div><span>124+</span> <p>repos & contributions</p></div>
+            </div>
+            <div class="stat-box">
+                <i class="fas fa-star"></i>
+                <div><span>2.3k</span> <p>github stars</p></div>
+            </div>
+            <div class="stat-box">
+                <i class="fas fa-arrows-spin"></i>
+                <div><span>1.8k</span> <p>followers</p></div>
+            </div>
+        </div>
+
+        <!-- languages / streak inline modern -->
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 2rem 0;">
+            <div style="flex: 2; min-width: 260px;">
+                <div class="lang-graph">
+                    <div style="display: flex; justify-content: space-between; color:#91a9cf;">
+                        <span><i class="fab fa-python"></i> Python</span> <span>45%</span>
+                    </div>
+                    <div class="lang-bar"><div class="lang-fill" style="width:45%"></div></div>
+                    <div style="display: flex; justify-content: space-between; margin-top:12px; color:#91a9cf;">
+                        <span><i class="fab fa-js"></i> TypeScript</span> <span>30%</span>
+                    </div>
+                    <div class="lang-bar"><div class="lang-fill" style="width:30%; background:linear-gradient(90deg,#5699ff,#b66aff)"></div></div>
+                    <div style="display: flex; justify-content: space-between; margin-top:12px; color:#91a9cf;">
+                        <span><i class="fas fa-database"></i> SQL/NoSQL</span> <span>15%</span>
+                    </div>
+                    <div class="lang-bar"><div class="lang-fill" style="width:15%; background:linear-gradient(90deg,#48b5ff,#a16be8)"></div></div>
+                </div>
+            </div>
+            <div style="flex: 1; background: #11161f; border-radius: 2rem; border:1px solid #2f3b4e; padding: 1.5rem;">
+                <i class="fas fa-bolt" style="color: gold; font-size: 2rem;"></i>
+                <h3 style="font-size: 2rem; color: white;">1,942</h3>
+                <p style="color: #95a9ce;">coding streak (days)</p>
+                <div style="background: #2c3547; border-radius: 30px; width: 100%; height: 6px;"><div style="width:87%; background: linear-gradient(90deg, #48d6ff, #d283ff); height:6px; border-radius:30px;"></div></div>
+            </div>
+        </div>
+
+        <!-- connect footer -->
+        <div class="connect-links">
+            <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i> linkedin.com/in/touseefkhan</a>
+            <a href="#" class="social-btn"><i class="fab fa-x-twitter"></i> @touseef_dev</a>
+            <a href="#" class="social-btn"><i class="fab fa-github"></i> /Touseefkhan005</a>
+            <a href="#" class="social-btn"><i class="fab fa-dev"></i> dev.to/touseef</a>
+            <a href="#" class="social-btn"><i class="far fa-envelope"></i> aalikhan22554</a>
+        </div>
+
+        <!-- view counter & footer -->
+        <div class="footer-note">
+            <div style="display: flex; gap: 12px; justify-content: center; align-items: center; flex-wrap: wrap;">
+                <span><i class="far fa-eye" style="color: #4870b5;"></i> profile views <strong>1,482</strong></span>
+                <span>⚡</span>
+                <span><i class="far fa-compass"></i> 2025 — Xvision labs</span>
+                <span>⚡</span>
+                <span><i class="fas fa-crown" style="color: #ffb980;"></i> build with intent</span>
+            </div>
+            <div style="margin-top: 1.8rem; font-size: 1.1rem;">
+                <i class="fas fa-quote-right" style="opacity:0.3;"></i>  code by TOUSEEF, designed for the modern stack  <i class="fas fa-quote-left" style="opacity:0.3;"></i>
+            </div>
+            <div style="margin-top: 0.7rem;">
+                <span class="badge" style="background:#00000040;"><i class="far fa-smile"></i> let's build the future</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
