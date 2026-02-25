@@ -44,7 +44,7 @@
   <br>
   
   <!-- Stats Card -->
-  <img src="https://github-readme-stats.vercel.app/api?username=Touseefkhan005&show_icons=true&hide_border=true&bg_color=0D1117&title_color=6A5AFF&icon_color=6A5AFF&text_color=FFFFFF&border_radius=15" width="100%">
+ <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Touseefkhan005&theme=github_dark">
       
   </td>
   </tr>
