@@ -175,13 +175,13 @@
 ## 📊 GitHub Analytics
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Touseefkhan005&show_icons=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=6A5AFF&icon_color=6A5AFF&text_color=FFFFFF&border_radius=15" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Touseefkhan005&hide_border=true&background=0D1117&stroke=6A5AFF&ring=6A5AFF&fire=6A5AFF&currStreakLabel=6A5AFF&sideLabels=FFFFFF&dates=9F9F9F" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Touseefkhan005&theme=github_dark" />
+
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Touseefkhan005&theme=github_dark" />
 </div>
 
 <div align="center">
-  <img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Touseefkhan005&layout=compact&hide_border=true&bg_color=0D1117&title_color=6A5AFF&text_color=FFFFFF&border_radius=15" />
-</div>
+  <img width="40%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Touseefkhan005&theme=github_dark" /></div>
 
 <!-- Activity Graph -->
 <div align="center">
@@ -192,14 +192,14 @@
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 </p>
 
-## 🏆 GitHub Trophies
+## 🏆 GitHub Highlights
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Touseefkhan005&theme=radical&no-frame=true&no-bg=false&margin-w=4&row=2&column=4" />
+  <img src="https://raw.githubusercontent.com/Touseefkhan005/Touseefkhan005/main/github-metrics.svg" />
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
+  <img src="https://raw.githubusercontent.com/Touseefkhan005/Touseefkhan005/main/assets/rainbow.png" width="100%" />
 </p>
 
 ## 🌐 Connect With Me
